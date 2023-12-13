@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caja de Ritmos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="drum-machine">
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <p>Intervalo seleccionado: <span id="intervalValue">1000</span> ms</p>
+    <input type="range" id="intervalSlider" min="333" max="1000" step="10" value="1000">
+
+    <div class="grid-container">
+      <!-- Genera 16 botones -->
+      <!-- Agregué los identificadores a los botones -->
+      <!-- Además, cada botón tendrá la clase "drum-button" para estilos comunes y la clase "yellow" cuando cambie a amarillo -->
+      <!-- El atributo data-button-number se utiliza para rastrear qué botón cambió de color -->
+      <!-- Puedes personalizar estos elementos según tus necesidades -->
+      <button class="drum-button" id="button1" data-button-number="1"></button>
+      <button class="drum-button" id="button2" data-button-number="2"></button>
+      <button class="drum-button" id="button3" data-button-number="3"></button>
+      <button class="drum-button" id="button4" data-button-number="4"></button>
+      <button class="drum-button" id="button5" data-button-number="5"></button>
+      <button class="drum-button" id="button6" data-button-number="6"></button>
+      <button class="drum-button" id="button7" data-button-number="7"></button>
+      <button class="drum-button" id="button8" data-button-number="8"></button>
+      <button class="drum-button" id="button9" data-button-number="9"></button>
+      <button class="drum-button" id="button10" data-button-number="10"></button>
+      <button class="drum-button" id="button11" data-button-number="11"></button>
+      <button class="drum-button" id="button12" data-button-number="12"></button>
+      <button class="drum-button" id="button13" data-button-number="13"></button>
+      <button class="drum-button" id="button14" data-button-number="14"></button>
+      <button class="drum-button" id="button15" data-button-number="15"></button>
+      <button class="drum-button" id="button16" data-button-number="16"></button>
+    </div>
+  </div>
+
+  <!-- Cambié la ruta del script de socket.io para usar https://cdn.socket.io/4.0.0/socket.io.min.js -->
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
